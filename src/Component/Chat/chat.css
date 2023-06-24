@@ -1,0 +1,99 @@
+.chatPage{
+    background-color: #FCF5EB;
+    height:100vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chatContainer{
+    background-color: white;
+    height:60%;
+    width:60%;
+}
+.header{
+    background-color: crimson;
+    height:15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header>h3{
+    text-align: center;
+    color:white;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 1.7rem;
+    margin-right: 1rem;
+   
+  
+}
+.header>img{
+    width:3vmax;
+    margin-left: 1.4rem;
+    color:white;
+    height:3vmax;
+    border-radius: 50%;
+    transition: all 0.5s;
+    z-index: 1;
+
+}
+.header>img:hover{
+    width:250px;
+    height:250px;
+    border-radius: 50%;
+    z-index: 1;
+    border:3px solid crimson;
+    /* padding: 0.4rem; */
+    /* border:2px solid crimson; */
+   
+
+}
+
+.chatBox{
+    border-bottom:0.2vmax solid black;
+    /* border-bottom: 0.2vmax solid black; */
+    height:70%;
+    box-sizing: border-box;
+  
+
+}
+.inputBox{
+    /* border:0.2vmax solid black; */
+    height:14%;
+    box-sizing: border-box;
+    display: flex;
+   
+}
+#chatInput{
+    width:80%;
+  margin: 0.5rem 0.5rem;
+    border: none;
+    box-sizing: border-box;
+    padding: 1rem;
+    /* border-radius: 30px; */
+    margin-top: 0rem;
+    /* border:1px solid black; */
+  
+    
+
+}
+.sendBtn{
+    width:20%;
+    background-color: goldenrod;
+    font-size: 1.4rem;
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin: 0.5rem 0.5rem;
+    cursor:pointer;
+    border:none;
+    transition: all 0.5s;
+
+
+
+}
+.sendBtn:hover{
+    background-color: crimson;
+    color:white;    
+}

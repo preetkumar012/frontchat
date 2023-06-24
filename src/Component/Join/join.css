@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.joinpage{
+    background-color: #0176D2;
+    height:100vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.joincontainer{
+    width:50%;
+    height:auto;
+    /* border-radius: 10px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px gray;
+    
+
+
+}
+.joincontainer > img {
+    width:8vmax;
+    padding: 0.5rem 0.5rem;
+    margin-top: 1rem;
+}
+.joincontainer > h3{
+    color:black;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    width: 30vmax;
+    border-bottom: 0.2vmax solid rgb(220, 13, 13);
+    text-align: center;
+    padding: 0.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#joinInput{
+    width:30vmax;
+    border: 1px solid black;
+    height:3rem;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.3rem;
+    outline: none;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    padding-left: 1rem;
+
+
+}
+.buttonType{
+    width:150px;
+    height:50px;
+    background-color: azure;
+    font-size: 1.4rem;
+    font-weight: bold;
+    transition: all 0.5s;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+}
+.buttonType:hover{
+    background-color: white;
+}
