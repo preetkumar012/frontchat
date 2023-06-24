@@ -37,7 +37,7 @@ const Login = () => {
       toast.error('please enter spacial character in your password')
     }
     else {
-        let result=await fetch("https://backchat-frf1.vercel.app/login",{
+        let result=await fetch("http://localhost:4500/login",{
           method:"post",
           body:JSON.stringify({email, password}),
           headers:{
