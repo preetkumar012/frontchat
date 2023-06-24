@@ -9,7 +9,7 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [toggle, setToggle] = useState()
-  const [modal, setModal]=useState(true);
+  // const [modal, setModal]=useState(true);
   const navigate=useNavigate();
 
   useEffect(()=>{
@@ -37,7 +37,7 @@ const Login = () => {
       toast.error('please enter spacial character in your password')
     }
     else {
-        let result=await fetch("https://welcomechat.vercel.app/login",{
+        let result=await fetch("https://backchat-frf1.vercel.app/login",{
           method:"post",
           body:JSON.stringify({email, password}),
           headers:{
@@ -59,22 +59,11 @@ const Login = () => {
   }
 
 
-  useEffect(()=>{
-    setTimeout(() => {
-      HandleModal()
-    }, 2000);
-    
-  },[])
 
-
-  const HandleModal=()=>{
-    setModal(true);
-  }
   return (
     <>
    <div className="wraper-class"></div>
-   {
-    modal && (
+  
 
   
    <div className="signup">
@@ -117,7 +106,7 @@ const Login = () => {
       </div>
       <ToastContainer />
     </div>
-      ) }
+    
     </>
   );
 };

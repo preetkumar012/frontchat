@@ -32,7 +32,7 @@ const SignUp = () => {
       toast.error('please enter spacial character in your password')
     }
     else {
-      const result = await fetch('https://welcomechat.vercel.app/register', {
+      const result = await fetch('https://backchat-frf1.vercel.app/register', {
         method: "post",
         body: JSON.stringify({ name, email, password }),
         headers: {

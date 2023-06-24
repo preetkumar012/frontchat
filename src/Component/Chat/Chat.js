@@ -5,7 +5,7 @@ import socketIO from "socket.io-client";
 import Message from "../../Message/Message";
 import ReactScrollToBottom from "react-scroll-to-bottom";
 
-const ENDPOINT = "https://welcomechat.vercel.app/";
+const ENDPOINT = "https://backchat-frf1.vercel.app/";
 let socket;
 
 const Chat = () => {
